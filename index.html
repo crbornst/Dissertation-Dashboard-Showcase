@@ -1,89 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Dissertation Dashboard Showcase</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Dissertation Dashboard | Showcase</title>
+  <meta name="description" content="A public showcase for My Dissertation Dashboard, a cloud-based dissertation workspace built for doctoral students." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <div class="brand">🎓 My Dissertation Dashboard</div>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="My Dissertation Dashboard home">
+        <span class="brand-icon">🎓</span>
+        <span>My Dissertation Dashboard</span>
+      </a>
       <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#demo">Demo</a>
         <a href="#features">Features</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#preview">Preview</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#bio">Bio</a>
       </div>
     </nav>
-    <section class="hero-content">
-      <p class="eyebrow">Dissertation in Practice | Ed.D. Workspace</p>
-      <h1>A calm, organized dashboard for managing the dissertation journey.</h1>
-      <p class="lead">This private cloud app helps organize chapters, research sources, tasks, deadlines, and weekly planning in one focused space.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#preview">View Preview</a>
-        <a class="button secondary" href="#features">See What It Tracks</a>
-      </div>
-    </section>
   </header>
 
-  <main>
-    <section id="features" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">What it does</p>
-        <h2>Built around the actual dissertation workflow</h2>
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <p class="eyebrow">Dissertation in Practice • Ed.D.</p>
+        <h1>A dissertation workspace built by a doctoral student, for doctoral students.</h1>
+        <p class="hero-text">My Dissertation Dashboard brings research, chapter planning, tasks, and scheduling into one calm cloud-based workspace.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#demo">View the dashboard</a>
+          <a class="button secondary" href="#about">Learn more</a>
+        </div>
       </div>
-      <div class="feature-grid">
-        <article class="card"><span>📘</span><h3>Chapter Workspace</h3><p>Five chapter cards track progress, notes, word counts, and goals.</p></article>
-        <article class="card"><span>📚</span><h3>Research Library</h3><p>Stores citation details, article notes, key findings, quotes, and how each source will be used.</p></article>
-        <article class="card"><span>✅</span><h3>Task Manager</h3><p>Organizes writing, reading, coursework, editing, meetings, and dissertation action items.</p></article>
-        <article class="card"><span>📅</span><h3>Master Schedule</h3><p>Combines dissertation deadlines, coursework, meetings, and personal commitments.</p></article>
-        <article class="card"><span>🎯</span><h3>Daily Dashboard</h3><p>Shows today’s priorities, currently reading, coming up items, and progress at a glance.</p></article>
-        <article class="card"><span>☁️</span><h3>Cloud Saving</h3><p>The working app saves privately with Firebase login, so data stays synced across devices.</p></article>
-      </div>
-    </section>
-
-    <section id="workflow" class="section split">
-      <div>
-        <p class="eyebrow">How it helps</p>
-        <h2>Less searching. More writing.</h2>
-        <p>The dashboard is designed to reduce overwhelm by showing only what matters next. Research, tasks, chapters, and calendar items each have a clear place.</p>
-      </div>
-      <div class="timeline">
-        <div><strong>1</strong><p>Add research articles and citation details.</p></div>
-        <div><strong>2</strong><p>Track notes, quotes, findings, and themes.</p></div>
-        <div><strong>3</strong><p>Connect work to chapter goals and deadlines.</p></div>
-        <div><strong>4</strong><p>Use the daily dashboard to stay focused.</p></div>
-      </div>
-    </section>
-
-    <section id="preview" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Static preview</p>
-        <h2>Sample dashboard view</h2>
-      </div>
-      <div class="mock-app">
-        <aside>
-          <div class="mini-brand">MDD</div>
-          <p>Dashboard</p><p>Chapters</p><p>Research</p><p>Tasks</p><p>Schedule</p>
-        </aside>
-        <div class="mock-main">
-          <div class="mock-header"><h3>My Dissertation Dashboard</h3><span>Private workspace</span></div>
-          <div class="mock-grid">
-            <div class="mock-card"><h4>🎯 Today</h4><p>Write 500 words</p><p>Read one article</p></div>
-            <div class="mock-card"><h4>📖 Currently Reading</h4><p>Instructional coaching protocols</p><p>Teacher self-efficacy</p></div>
-            <div class="mock-card"><h4>📅 Coming Up</h4><p>Advisor meeting</p><p>Chapter 2 draft</p></div>
-          </div>
-          <div class="chapter-row"><span>Chapter 1</span><div><b style="width:90%"></b></div><em>90%</em></div>
-          <div class="chapter-row"><span>Chapter 2</span><div><b style="width:45%"></b></div><em>45%</em></div>
-          <div class="chapter-row"><span>Chapter 3</span><div><b style="width:15%"></b></div><em>15%</em></div>
+      <div class="hero-card" aria-label="Dashboard preview">
+        <div class="preview-topbar">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="preview-grid">
+          <article class="mini-card">
+            <span class="mini-icon">🎯</span>
+            <h3>Today</h3>
+            <p>Write 500 words</p>
+            <p>Review article notes</p>
+          </article>
+          <article class="mini-card">
+            <span class="mini-icon">📚</span>
+            <h3>Currently Reading</h3>
+            <p>Coaching Protocols</p>
+            <p>Leadership Frameworks</p>
+          </article>
+          <article class="mini-card wide">
+            <span class="mini-icon">📅</span>
+            <h3>Coming Up</h3>
+            <p>Advisor meeting • Chapter 2 draft • Coursework deadline</p>
+          </article>
         </div>
       </div>
     </section>
+
+    <section id="about" class="section-pad soft-panel">
+      <div class="section-heading">
+        <p class="eyebrow">About the project</p>
+        <h2>Why I built this</h2>
+      </div>
+      <div class="two-col">
+        <p>As an Ed.D. student, I needed one place to organize research articles, chapter notes, deadlines, coursework, and writing goals. Traditional tools helped with pieces of the process, but I wanted a workspace designed around the dissertation journey itself.</p>
+        <p>My Dissertation Dashboard is a cloud-based application designed to support the full Dissertation in Practice workflow: planning, reading, writing, revising, and staying aware of what is coming next.</p>
+      </div>
+    </section>
+
+    <section id="demo" class="section-pad">
+      <div class="section-heading centered">
+        <p class="eyebrow">Interactive preview</p>
+        <h2>Explore the dashboard concept</h2>
+        <p>Click each section to see how the application is organized without accessing private dissertation data.</p>
+      </div>
+
+      <div class="demo-shell">
+        <div class="demo-tabs" role="tablist" aria-label="Dashboard preview sections">
+          <button class="demo-tab active" data-panel="dashboard" type="button">Dashboard</button>
+          <button class="demo-tab" data-panel="research" type="button">Research Library</button>
+          <button class="demo-tab" data-panel="chapters" type="button">Chapters</button>
+          <button class="demo-tab" data-panel="schedule" type="button">Schedule</button>
+        </div>
+
+        <div class="demo-screen active" id="dashboard">
+          <div class="screen-sidebar">
+            <strong>Dashboard</strong>
+            <span>Research</span>
+            <span>Chapters</span>
+            <span>Tasks</span>
+            <span>Calendar</span>
+          </div>
+          <div class="screen-content">
+            <h3>Dashboard</h3>
+            <div class="screen-card-grid">
+              <div class="screen-card"><b>🎯 Today</b><p>3 priorities selected for focused work.</p></div>
+              <div class="screen-card"><b>📖 Currently Reading</b><p>Active sources appear automatically.</p></div>
+              <div class="screen-card"><b>👀 Coming Up</b><p>Deadlines and meetings from the master schedule.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-screen" id="research">
+          <div class="screen-sidebar"><strong>Research</strong><span>To Read</span><span>Reading</span><span>Completed</span></div>
+          <div class="screen-content">
+            <h3>Research Library</h3>
+            <div class="source-list">
+              <div><b>Instructional Coaching and Teacher Growth</b><span>APA • Quotes • Key findings • Notes</span></div>
+              <div><b>Leadership Practices in Schools</b><span>Theme • Methodology • How I’ll use this source</span></div>
+              <div><b>Improvement Science in Practice</b><span>Chapter connection • Summary • Citation</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-screen" id="chapters">
+          <div class="screen-sidebar"><strong>Chapters</strong><span>Chapter 1</span><span>Chapter 2</span><span>Chapter 3</span><span>Chapter 4</span><span>Chapter 5</span></div>
+          <div class="screen-content">
+            <h3>Chapter Workspaces</h3>
+            <div class="chapter-preview-grid">
+              <div class="chapter-preview"><b>Chapter 1</b><span>Introduction</span><div class="progress"><i style="width:80%"></i></div></div>
+              <div class="chapter-preview"><b>Chapter 2</b><span>Literature Review</span><div class="progress"><i style="width:45%"></i></div></div>
+              <div class="chapter-preview"><b>Chapter 3</b><span>Methodology</span><div class="progress"><i style="width:20%"></i></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-screen" id="schedule">
+          <div class="screen-sidebar"><strong>Schedule</strong><span>Today</span><span>This Week</span><span>Milestones</span></div>
+          <div class="screen-content">
+            <h3>Master Schedule</h3>
+            <div class="timeline-list">
+              <div><b>Monday</b><span>Writing block • Coursework reading</span></div>
+              <div><b>Wednesday</b><span>Advisor check-in • Article notes</span></div>
+              <div><b>Friday</b><span>Discussion post • Chapter progress review</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section-pad soft-panel">
+      <div class="section-heading centered">
+        <p class="eyebrow">Features</p>
+        <h2>Designed for dissertation work</h2>
+      </div>
+      <div class="feature-grid">
+        <article><span>📚</span><h3>Research Library</h3><p>Store articles, citation details, notes, quotes, and source summaries in one place.</p></article>
+        <article><span>✍️</span><h3>Chapter Workspaces</h3><p>Organize the five dissertation chapters with goals, notes, progress, and related research.</p></article>
+        <article><span>📅</span><h3>Master Schedule</h3><p>Track coursework, meetings, dissertation milestones, writing blocks, and deadlines.</p></article>
+        <article><span>✅</span><h3>Task Manager</h3><p>Prioritize dissertation and coursework tasks by category, deadline, and status.</p></article>
+        <article><span>☁️</span><h3>Cloud Sync</h3><p>Save securely with Firebase so the workspace can be accessed from different devices.</p></article>
+        <article><span>📱</span><h3>Responsive Design</h3><p>Use the dashboard on desktop, tablet, or phone with a clean, readable interface.</p></article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section-pad">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Where the project is headed</h2>
+      </div>
+      <div class="roadmap">
+        <div class="road-item done"><span>✅</span><div><h3>Version 1</h3><p>GitHub Pages hosting, Firebase Authentication, Firestore, and cloud saving.</p></div></div>
+        <div class="road-item active"><span>🚧</span><div><h3>Version 2</h3><p>Dashboard, Research Library, chapter workspaces, task manager, and master schedule.</p></div></div>
+        <div class="road-item"><span>🔬</span><div><h3>Version 3</h3><p>Improved source management, writing statistics, progress tracking, and advanced search.</p></div></div>
+        <div class="road-item"><span>🤖</span><div><h3>Future</h3><p>AI-assisted research organization, note synthesis, and dissertation support tools.</p></div></div>
+      </div>
+    </section>
+
+    <section id="bio" class="section-pad bio-panel">
+      <div>
+        <p class="eyebrow">About me</p>
+        <h2>Built as part of my Ed.D. journey</h2>
+        <p>I am an Ed.D. student interested in educational leadership, practical problem-solving, and using technology to make complex academic work more manageable. My Dissertation Dashboard began as a personal system to support my own Dissertation in Practice and has grown into a custom application for organizing doctoral work.</p>
+      </div>
+      <blockquote>“The best productivity system is the one built around the way you actually think and work.”</blockquote>
+    </section>
   </main>
 
-  <footer>
-    <p>Designed as a private dissertation organization system. This showcase does not include login access or private dissertation data.</p>
+  <footer class="footer">
+    <p>© 2026 My Dissertation Dashboard • Public showcase site</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
